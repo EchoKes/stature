@@ -1,0 +1,84 @@
+<template>
+    <div class="p-4 bg-white">
+      <h1 class="text-5xl text-black font-bold text-center my-12">Properties Managed</h1>
+  
+      <!-- Region Filter -->
+      <div class="flex flex-wrap justify-center gap-2 mb-8">
+        <button
+          v-for="region in regions"
+          :key="region"
+          @click="selectedRegion = region"
+          class="btn btn-sm"
+          :class="{ 'btn-primary': selectedRegion === region }"
+        >
+          {{ region }}
+        </button>
+      </div>
+  
+      <!-- Grid of Cards -->
+      <div class="xl:mx-14 sm:mx-2 md:mx-6 lg:mx-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div
+            v-for="property in filteredProperties"
+            :key="property.id"
+            class="card text-black shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg hover:outline outline-2 rounded-xl"
+        >
+            <figure>
+            <img
+                :src="property.image"
+                :alt="property.name"
+                class="h-72 w-full object-cover"
+            />
+            </figure>
+            <div class="card-body px-4 py-3 bg-[#d3d3d3] rounded-b-xl">
+            <h2 class="card-title font-bold text-lg text-black">
+                {{ property.name }}
+            </h2>
+            <p class="text-gray-800 text-sm" v-html="truncateText(property.description)"></p>
+            <div class="mt-2 flex justify-between items-center">
+                <div class="badge badge-info text-white font-medium">
+                {{ property.region }}
+                </div>
+                <div class="badge badge-primary text-white font-medium">
+                {{ property.units }} Units
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+  
+  <script setup>
+    import { ref, computed, onMounted } from 'vue'
+
+    const properties = ref([])
+    const selectedRegion = ref('All')
+
+    onMounted(async () => {
+      const res = await fetch('/json/properties.json')
+      properties.value = await res.json()
+    })
+
+    const regions = computed(() => {
+      const regionSet = new Set(properties.value.map(p => p.region?.trim()))
+      return ['All', ...Array.from(regionSet).filter(Boolean)]
+    })
+
+    const filteredProperties = computed(() => {
+      if (selectedRegion.value === 'All') return properties.value
+      return properties.value.filter(p =>
+        p.region?.trim().toLowerCase() === selectedRegion.value.toLowerCase()
+      )
+    })
+
+    const truncateText = (text, maxLength = 200) => {
+      if (!text) return ''
+      return text.length > maxLength ? text.slice(0, maxLength) + '...' : text
+    }
+  </script>
+  
+  <style scoped>
+  .card-title {
+    font-weight: 600;
+  }
+  </style>
