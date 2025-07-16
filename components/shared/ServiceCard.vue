@@ -42,8 +42,6 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-const isExpanded = ref(false);
 defineProps({
   title: {
     type: String,
