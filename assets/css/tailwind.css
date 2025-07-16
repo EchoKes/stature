@@ -3,10 +3,16 @@
 @tailwind utilities;
 
 @layer components {
-  .card-services {
-    @apply relative overflow-hidden w-[400px] h-[370px] rounded-[30px];
+  .card-services-default {
+    @apply relative overflow-hidden w-full h-full rounded-[30px];
     clip-path: path(
       "M 0 0 H 310 A 30 30 0 0 1 340 30 A 30 30 0 0 0 370 60 A 30 30 0 0 1 400 90 V 370 H 0 Z"
+    );
+  }
+  .card-services-tiny {
+    @apply relative overflow-hidden w-full h-full rounded-[22px];
+    clip-path: path(
+      "M 0 0 H 228 A 22 22 0 0 1 250 22 A 22 22 0 0 0 272 44 A 22 22 0 0 1 295 66 V 273 H 0 Z"
     );
   }
 }
