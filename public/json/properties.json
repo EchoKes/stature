@@ -1,0 +1,163 @@
+[
+  {
+    "id": 1,
+    "name": "Residences at 338A",
+    "description": "A 46-unit freehold apartment located at 338A River Valley Road. Completed in 2004. Facilities include a swimming pool and gymnasium.",
+    "region": "Central",
+    "units": 46,
+    "image": "/images/Residences_at_338A.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Goodwood Gardens",
+    "description": "A 29-unit residential apartment at 4 Balmoral Crescent. Facilities: BBQ pits, basement car park, fitness corner, gymnasium, 24-hour security, swimming pool, wading pool.",
+    "region": "Central",
+    "units": 29,
+    "image": "/images/Goodwood_Gardens.jpg"
+  },
+  {
+    "id": 3,
+    "name": "The Ventana",
+    "description": "A 39-unit freehold apartment development at 95 Pasir Panjang Road. Amenities: swimming pool, 24-hour security, jacuzzi, BBQ pits, gym, clubhouse, billiards room.",
+    "region": "South",
+    "units": 39,
+    "image": "/images/The_Ventana.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Symphony Heights",
+    "description": "A 449-unit freehold residential development at 33–45 Hume Avenue. Features include round balconies, swimming pools, and open grasslands.",
+    "region": "West",
+    "units": 449,
+    "image": "/images/Symphony_Heights.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Kovan Esquire",
+    "description": "A 23-unit freehold condominium at 47 Kovan Road. Completed around 1998.",
+    "region": "North",
+    "units": 23,
+    "image": "/images/Kovan_Esquire.jpg"
+  },
+
+  {
+    "id": 6,
+    "name": "Wai Wing Centre",
+    "description": "A 16-unit mixed-use development (shops, offices, residential) at 501 Balestier Road. Freehold, completed in 1991 near Novena MRT and TTSH.",
+    "region": "North",
+    "units": 16,
+    "image": "/images/Wai_Wing_Centre.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Kovan Crest",
+    "description": "A 20-unit freehold condominium at 45 Kovan Road. Completed in 1999, near Kovan MRT station.",
+    "region": "North",
+    "units": 20,
+    "image": "/images/Kovan_Crest.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Palisades",
+    "description": "An 18-unit freehold condominium at 294 Pasir Panjang Road. Completed in 1985 near West Coast MRT, Haw Par Villa, and Kent Ridge Park.",
+    "region": "West",
+    "units": 18,
+    "image": "/images/Palisades.jpg"
+  },
+  {
+    "id": 9,
+    "name": "10 Surrey Road",
+    "description": "A 13-unit freehold residential development at 10 Surrey Road, district 11. Completed in 2002, near Novena MRT.",
+    "region": "Central",
+    "units": 13,
+    "image": "/images/10_Surrey_Road.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Fernhill Cottage",
+    "description": "A 14-unit low-density townhouse at Fernhill Road. Features include a swimming pool, children’s pool, BBQ. Near Orchard Road.",
+    "region": "Central",
+    "units": 14,
+    "image": "/images/Fernhill_Cottage.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Mont Timah",
+    "description": "A 32-unit 99-year leasehold condominium at Bukit Way. Near Bukit Gombak MRT.",
+    "region": "West",
+    "units": 32,
+    "image": "/images/Mont_Timah.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Petro Centre",
+    "description": "A 40-unit industrial light-use development at Jalan Kilang Barat. Near Redhill MRT.",
+    "region": "West",
+    "units": 40,
+    "image": "/images/Petro_Centre.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Equatorial Apartments",
+    "description": "A 61-unit freehold apartment at 48–54 Meyer Road, near Singapore Indoor Stadium. Completed in 1977.",
+    "region": "East",
+    "units": 61,
+    "image": "/images/Equatorial_Apartments.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Island View",
+    "description": "A 72-unit freehold development at Jalan Mat Jambol. Completed in 1984 near Pasir Panjang MRT, Alexandra Hospital, and Kent Ridge Park.",
+    "region": "Central",
+    "units": 72,
+    "image": "/images/Island_View.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Hume Park II",
+    "description": "A 328-unit freehold development at Hume Avenue. Completed in 1997.",
+    "region": "West",
+    "units": 328,
+    "image": "/images/Hume_Park_2.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Hillview 128",
+    "description": "A 90-unit 999-year leasehold apartment at 124 Hillview Avenue. Completed in 2001.",
+    "region": "West",
+    "units": 90,
+    "image": "/images/Hillview_128.png"
+  },
+  {
+    "id": 17,
+    "name": "Leonie Towers",
+    "description": "A 92-unit freehold apartment development located at 28 Leonie Hill. Completed in 1975, 24 storeys tall, near Tangs and Fort Canning Park.",
+    "region": "Central",
+    "units": 92,
+    "image": "/images/Leonie_Towers.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Villa Chancery",
+    "description": "VILLA CHANCERY is located at 39 CHANCERY LANE.<br>Facilities provided at the condominium includes a swimming pool and a squash court",
+    "region": "Central",
+    "units": "TBA",
+    "image": "/images/Villa_Chancery.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Ridgewood",
+    "description": "A 464 units residential development located at 1 Ridgewood Close.<br>Condo facilities include swimming pool, sauna, gymnasium, tennis courts, squash courts, fitness corner, mini-mart, covered car park, 24 hours security, playground, and BBQ pits",
+    "region": "West",
+    "units": "464",
+    "image": "/images/Ridgewood.jpg"
+  },
+  {
+    "id": 20,
+    "name": "8 Orange Grove",
+    "description": "A 19 unit residential development located at Orange Grove Road.<br><br>8 Orange Grove is a freehold development located at 8 Orange Grove Road, Singapore 258342, in District 10, minutes away from Orchard MRT Station. Completed in 1986, it stands 15 storeys tall and comprises of 19 units. 8 Orange Grove is close to Singapore Botanic Gardens and esteemed clubs like Tanglin Club and The Pines Club.<br><br><b>Condo Facilities at 8 Orange Grove:</b><br>Covered carpark<br><br><b>Condo Amenities near 8 Orange Grove:</b><br>Numerous feeder bus services are available near 8 Orange Grove. It is also close to local and international schools, such as Raffles Girls’ Secondary School, ISS International School, and Overseas Family School.<br><br>8 Orange Grove’s proximity to Orchard Road brings residents close to several one-stop shopping destinations, such as Ion Orchard, Takashimaya, Wisma Atria, and The Paragon, where a suite of amenities can be found like supermarkets, boutique shops, banks, restaurants, eating establishments, cinema, library, and more.<br><br>For vehicle owners, driving from 8 Orange Grove to the business hub takes 10 – 15 minutes, via River Valley Road.",
+    "region": "Central",
+    "units": "19",
+    "image": "/images/8_Orange_Grove.jpg"
+  }
+]

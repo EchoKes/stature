@@ -15,4 +15,16 @@
       "M 0 0 H 228 A 22 22 0 0 1 250 22 A 22 22 0 0 0 272 44 A 22 22 0 0 1 295 66 V 273 H 0 Z"
     );
   }
+  /* Custom animation pause on hover */
+  .pause-on-hover {
+    animation-play-state: paused;
+  }
+  /* Hide scrollbar across modern browsers */
+  .hide-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
 }
