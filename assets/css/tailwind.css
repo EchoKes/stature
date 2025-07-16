@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .card-services {
+    @apply relative overflow-hidden w-[400px] h-[370px] rounded-[30px];
+    clip-path: path(
+      "M 0 0 H 310 A 30 30 0 0 1 340 30 A 30 30 0 0 0 370 60 A 30 30 0 0 1 400 90 V 370 H 0 Z"
+    );
+  }
+}
