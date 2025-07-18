@@ -1,9 +1,9 @@
 <template>
   <div class="p-4 bg-white">
-    <h1 class="text-5xl text-black font-bold text-center my-12">Properties Managed</h1>
+    <h1 class="text-5xl text-black font-bold text-center my-12" data-aos="fade-up">Properties Managed</h1>
 
     <!-- Region Filter -->
-    <div class="flex flex-wrap justify-center gap-2 mb-8">
+    <div class="flex flex-wrap justify-center gap-2 mb-8" data-aos="fade-up" data-aos-delay="100">
       <button
         v-for="region in regions"
         :key="region"
@@ -21,7 +21,7 @@
         v-for="property in filteredProperties"
         :key="property.id"
         @click="openModal(property)"
-        class="card text-black shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg hover:outline outline-2 rounded-xl cursor-pointer"
+        class="card text-black shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg hover:outline outline-2 rounded-xl cursor-pointer" data-aos="fade-up"
       >
         <figure>
           <img
@@ -130,7 +130,15 @@
     if (!text) return ''
     return text.length > maxLength ? text.slice(0, maxLength) + '...' : text
   }
-  
+  import AOS from 'aos'
+  import 'aos/dist/aos.css'
+
+  onMounted(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true, // whether animation should happen only once
+    })
+  })
 </script>
   <style scoped>
   .card-title {

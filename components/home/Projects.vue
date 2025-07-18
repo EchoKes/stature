@@ -51,7 +51,7 @@
         </div>
       </div>
     </div>
-    <button class="mt-6 bg-teal-600 text-white px-4 py-2 rounded-md" data-aos="fade-up" data-aos-delay="200">View All →</button>
+    <button class="mt-6 bg-teal-600 text-white px-4 py-2 rounded-md" data-aos="fade-up" data-aos-delay="200"><a href="/properties">View All →</a></button>
   </section>
 </template>
 
