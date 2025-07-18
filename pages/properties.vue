@@ -5,6 +5,6 @@
   </template>
   
   <script setup>
-    import properties from "~/components/properties.vue";
+    import properties from "~/components/shared/properties.vue";
   </script>
   
