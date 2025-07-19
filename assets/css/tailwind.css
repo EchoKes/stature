@@ -27,4 +27,7 @@
   .hide-scrollbar::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
   }
+  html {
+    scroll-behavior: smooth;
+  }
 }

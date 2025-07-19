@@ -1,9 +1,10 @@
 <template>
-  <div class="py-12 px-4 md:px-16 bg-[#F7F2EA]">
-    <h2 class="text-3xl md:text-5xl font-bold text-center mb-14">
-      Management services that <br />
-      <span class="text-black">we offer</span>
-    </h2>
+  <section id="servicesOffered">
+    <div class="py-12 px-4 md:px-16 bg-[#F7F2EA]">
+      <h2 class="text-3xl md:text-5xl font-bold text-center mb-14" data-aos="fade-up">
+        Management services that <br />
+        <span class="text-black">we offer</span>
+      </h2>
 
     <div class="flex flex-wrap justify-center gap-8">
       <ServiceCard
@@ -36,6 +37,15 @@
 <script setup>
 import ServiceCard from "../shared/ServiceCard.vue";
 import { ref } from "vue";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+onMounted(() => {
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true, // whether animation should happen only once
+  })
+})
 
 const isModalOpen = ref(false);
 const activeService = ref(null);
@@ -87,16 +97,17 @@ const services = [
     ],
   },
 ];
+
 </script>
 
 <style scoped>
-.fade-slide-enter-active,
-.fade-slide-leave-active {
-  transition: all 0.4s ease;
-}
-.fade-slide-enter-from,
-.fade-slide-leave-to {
-  opacity: 0;
-  transform: translateY(-10px);
-}
+  .fade-slide-enter-active,
+  .fade-slide-leave-active {
+    transition: all 0.4s ease;
+  }
+  .fade-slide-enter-from,
+  .fade-slide-leave-to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
 </style>

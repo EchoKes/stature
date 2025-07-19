@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-white text-black">
+  <main class="bg-white text-black scroll-smooth">
     <HeroSection />
     <AboutUs />
     <Projects />
