@@ -6,46 +6,47 @@
         <span class="text-black">we offer</span>
       </h2>
 
-    <div class="flex flex-wrap justify-center gap-8">
-      <ServiceCard
-        v-for="(service, index) in services"
-        :key="index"
-        v-bind="service"
-        @click="openModal(service)"
-      />
-    </div>
-
-    <!-- Service Modal -->
-    <input type="checkbox" id="service_modal" class="modal-toggle" v-model="isModalOpen" />
-    <div class="modal" role="dialog">
-      <div class="modal-box max-w-xl bg-white">
-        <label for="service_modal" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
-          ✕
-        </label>
-
-        <h3 class="text-xl font-bold mb-2">{{ activeService?.title }}</h3>
-        <p class="mb-4">{{ activeService?.summary }}</p>
-        <ul class="list-disc pl-5 text-sm space-y-1">
-          <li v-for="(item, i) in activeService?.highlights" :key="i">{{ item }}</li>
-        </ul>
+      <div class="flex flex-wrap justify-center gap-8">
+        <ServiceCard
+          v-for="(service, index) in services"
+          :key="index"
+          v-bind="service"
+          @click="openModal(service)"
+        />
       </div>
-      <label class="modal-backdrop" for="service_modal">Close</label>
+
+      <!-- Service Modal -->
+      <input type="checkbox" id="service_modal" class="modal-toggle" v-model="isModalOpen" />
+      <div class="modal" role="dialog">
+        <div class="modal-box max-w-xl bg-white">
+          <label for="service_modal" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+            ✕
+          </label>
+
+          <h3 class="text-xl font-bold mb-2">{{ activeService?.title }}</h3>
+          <p class="mb-4">{{ activeService?.summary }}</p>
+          <ul class="list-disc pl-5 text-sm space-y-1">
+            <li v-for="(item, i) in activeService?.highlights" :key="i">{{ item }}</li>
+          </ul>
+        </div>
+        <label class="modal-backdrop" for="service_modal">Close</label>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>
 import ServiceCard from "../shared/ServiceCard.vue";
 import { ref } from "vue";
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 onMounted(() => {
   AOS.init({
     duration: 1000, // animation duration in ms
     once: true, // whether animation should happen only once
-  })
-})
+  });
+});
 
 const isModalOpen = ref(false);
 const activeService = ref(null);
@@ -97,17 +98,16 @@ const services = [
     ],
   },
 ];
-
 </script>
 
 <style scoped>
-  .fade-slide-enter-active,
-  .fade-slide-leave-active {
-    transition: all 0.4s ease;
-  }
-  .fade-slide-enter-from,
-  .fade-slide-leave-to {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
+.fade-slide-enter-active,
+.fade-slide-leave-active {
+  transition: all 0.4s ease;
+}
+.fade-slide-enter-from,
+.fade-slide-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
 </style>
