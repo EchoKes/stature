@@ -18,14 +18,14 @@
       <!-- Service Modal -->
       <input type="checkbox" id="service_modal" class="modal-toggle" v-model="isModalOpen" />
       <div class="modal" role="dialog">
-        <div class="modal-box max-w-xl bg-white">
+        <div class="modal-box w-[90vw] md:w-[60vw] max-w-none bg-white">
           <label for="service_modal" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
             ✕
           </label>
 
-          <h3 class="text-xl font-bold mb-2">{{ activeService?.title }}</h3>
-          <p class="mb-4">{{ activeService?.summary }}</p>
-          <ul class="list-disc pl-5 text-sm space-y-1">
+          <h3 class="text-xl sm:text-2xl md:text-3xl font-bold mb-2">{{ activeService?.title }}</h3>
+          <p class="text-sm sm:text-md md:text-lg mb-4">{{ activeService?.summary }}</p>
+          <ul class="list-disc pl-5 text-sm sm:text-md md:text-lg space-y-1">
             <li v-for="(item, i) in activeService?.highlights" :key="i">{{ item }}</li>
           </ul>
         </div>
