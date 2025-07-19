@@ -1,5 +1,8 @@
 <template>
-  <div class="group relative w-[295px] h-[273px] md:w-[400px] md:h-[370px]">
+  <div
+    class="group relative w-[295px] h-[273px] md:w-[400px] md:h-[370px] cursor-pointer"
+    @click="$emit('click')"
+  >
     <!-- Floating corner icon (outside the clipped area) -->
     <div
       class="absolute top-0 right-0 z-10 w-[2.2rem] h-[2.2rem] md:w-[3rem] md:h-[3rem] bg-white rounded-full flex items-center justify-center group-hover:bg-[#dbeb50]"
@@ -30,6 +33,7 @@
 
       <div class="w-full overflow-hidden flex items-center pt-2">
         <img
+          draggable="false"
           :src="img"
           alt="Service Image"
           class="object-contain w-full h-auto transition-transform duration-300 translate-y-3 group-hover:-translate-y-0"
@@ -60,4 +64,5 @@ defineProps({
     default: () => [],
   },
 });
+defineEmits(["click"]);
 </script>
