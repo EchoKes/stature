@@ -1,4 +1,5 @@
 <template>
+  <Navbar/>
   <section class="w-full bg-white py-16 px-6">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       <!-- Left Side -->
@@ -78,6 +79,7 @@
 
 <script setup>
 import { onMounted } from "vue";
+import Navbar from "./Navbar.vue";
 
 onMounted(() => {
   const script = document.createElement("script");

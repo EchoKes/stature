@@ -27,7 +27,7 @@
             <a href="/properties">Properties</a>
             <a href="/#aboutUs">About Us</a>
             <a href="/about">About</a>
-            <a href="/contact">Contact</a>
+            <a href="/contact-us">Contact</a>
         </nav>
   
         <!-- Mobile Menu Button -->
