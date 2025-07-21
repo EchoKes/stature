@@ -4,7 +4,7 @@
     </div>
   </template>
   
-  <script setup>
-    import properties from "~/components/shared/properties.vue";
-  </script>
+<script setup>
+  import properties from "~/components/shared/properties.vue";
+</script>
   
