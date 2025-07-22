@@ -1,7 +1,7 @@
 <template>
   <!-- Property Image Grid -->
   <section class="py-20 bg-white text-center" id="projects">
-    <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-12" data-aos="fade-up">Projects completed</h2>
+    <h2 class="text-3xl md:text-6xl lg:text-6xl font-bold mb-4 sm:mb-12" data-aos="fade-up">Projects completed</h2>
     <div class="overflow-hidden space-y-8 max-w-screen-xl mx-auto" data-aos="fade-left" data-aos-delay="200">
       <!-- Top Row: scroll right -->
       <div class="relative overflow-hidden">

@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: 'Urbanist', sans-serif;
+  }
+}
+
 @layer components {
   .card-services-default {
     @apply relative overflow-hidden w-full h-full rounded-[30px];
@@ -9,28 +15,34 @@
       "M 0 0 H 310 A 30 30 0 0 1 340 30 A 30 30 0 0 0 370 60 A 30 30 0 0 1 400 90 V 370 H 0 Z"
     );
   }
+
   .card-services-tiny {
     @apply relative overflow-hidden w-full h-full rounded-[22px];
     clip-path: path(
       "M 0 0 H 228 A 22 22 0 0 1 250 22 A 22 22 0 0 0 272 44 A 22 22 0 0 1 295 66 V 273 H 0 Z"
     );
   }
-  /* Custom animation pause on hover */
+
   .pause-on-hover {
     animation-play-state: paused;
   }
-  /* Hide scrollbar across modern browsers */
+
   .hide-scrollbar {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE 10+ */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
+
   .hide-scrollbar::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    display: none;
   }
+
   .form-input {
     @apply w-full px-4 py-3 bg-gray-300 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-black text-black;
   }
-  html {
-    scroll-behavior: smooth;
-  }
+
+  /* Fix Google Maps InfoWindow close button visibility */
+
 }
+
+
+

@@ -1,6 +1,6 @@
 <template>
   <Navbar/>
-  <div class="p-4 pt-12 bg-white">
+  <div class="p-4 pt-12 pb-10 bg-white">
     <h1 class="text-5xl text-black font-bold text-center my-12" data-aos="fade-up">Properties Managed</h1>
 
     <!-- Region Filter -->  

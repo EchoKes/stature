@@ -26,7 +26,6 @@
             <a href="/">Home</a>
             <a href="/properties">Properties</a>
             <a href="/#aboutUs">About Us</a>
-            <a href="/about">About</a>
             <a href="/contact-us">Contact</a>
         </nav>
   
@@ -53,11 +52,14 @@
   </template>
   
   <script setup>
-  import { useRoute } from 'vue-router'
-  const route = useRoute()
-  
-  function formatRouteName(name) {
-    if (!name || name === 'index') return ''
-    return name.charAt(0).toUpperCase() + name.slice(1)
-  }
+    import { ref } from 'vue'
+    import { useRoute } from 'vue-router'
+    
+    const isOpen = ref(false)
+    const route = useRoute()
+    
+    function formatRouteName(name) {
+        if (!name || name === 'index') return ''
+        return name.charAt(0).toUpperCase() + name.slice(1)
+    }
   </script>

@@ -33,7 +33,7 @@ defineProps({
     default: "TBA",
   },
   units: {
-    type: Number,
+    type: [Number,String],
     default: "TBA",
   },
 });

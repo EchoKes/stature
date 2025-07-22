@@ -1,7 +1,7 @@
 <template>
   <!-- Who Are We -->
   <section class="py-6 sm:py-10 md:py-20 bg-gray-50 text-center" id="aboutUs">
-    <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-12" data-aos="fade-up">
+    <h2 class="text-3xl md:text-6xl font-extrabold mb-4 sm:mb-12" data-aos="fade-up">
       Who are we?
     </h2>
 
@@ -39,7 +39,7 @@
 
         <!-- Description -->
         <p class="text-gray-700 leading-relaxed">
-          We're more than just a real estate company — we're your trusted partner in property.
+          We're more than just a real estate company, we're your trusted partner in property.
           <br /><br />
           Founded by Mr. Leong Wing Kit, a seasoned expert with over 20 years of real estate
           experience, our goal is to help our partners benefit from cost-effective, personalized
@@ -68,7 +68,7 @@
   <section class="py-12 sm:py-16 md:py-20 bg-[#EFF1F9]">
     <!-- First half with smaller right margin -->
     <div class="max-w-6xl mx-auto px-6 lg:pr-[30%]">
-      <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-12 text-[#7791BF]">
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 sm:mb-12 text-[#7791BF]">
         Meet Our Director
       </h2>
       <p class="text-gray-700">

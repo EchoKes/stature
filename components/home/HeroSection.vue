@@ -17,16 +17,16 @@
             Providing Reliable Real Estate <br />
             Management Services Since 2008.
           </h1>
-          <div class="flex flex-wrap gap-4">
+          <div class="flex flex-wrap gap-6">
             <button
-              class="bg-transparent text-white text-lg border-b-2 border-transparent hover:border-white transition duration-300"
+              class="bg-transparent text-white text-lg font-semibold border-b-2 border-transparent hover:border-white transition duration-300"
             >
-              Projects →
+              <a href="#projects">Projects →</a>
             </button>
             <button
-              class="bg-transparent text-white text-lg border-b-2 border-transparent hover:border-white transition duration-300"
+              class="bg-transparent text-white text-lg font-semibold border-b-2 border-transparent hover:border-white transition duration-300"
             >
-              Contact Us →
+             <a href="/contact-us">Contact Us →</a>
             </button>
           </div>
         </div>

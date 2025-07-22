@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        urbanist: ['"Urbanist"', 'sans-serif'],
+      },
       keyframes: {
         scrollLeft: {
           "0%": { transform: "translateX(0)" },
@@ -18,10 +21,10 @@ module.exports = {
           "100%": { transform: "translateX(0)" },
         },
       },
-    },
-    animation: {
-      "scroll-left": "scrollLeft 120s linear infinite",
-      "scroll-right": "scrollRight 120s linear infinite",
+      animation: {
+        "scroll-left": "scrollLeft 120s linear infinite",
+        "scroll-right": "scrollRight 120s linear infinite",
+      },
     },
   },
   plugins: [require("daisyui")],
