@@ -1,7 +1,7 @@
 <template>
   <section id="servicesOffered">
     <div class="py-12 px-4 md:px-16 bg-[#F7F2EA]">
-      <h2 class="text-3xl md:text-5xl font-bold text-center mb-14" data-aos="fade-up">
+      <h2 class="text-3xl md:text-6xl font-bold text-center mb-14" data-aos="fade-up">
         Management services that <br />
         <span class="text-black">we offer</span>
       </h2>
@@ -26,7 +26,7 @@
           <h3 class="text-xl sm:text-2xl md:text-3xl font-bold mb-2">{{ activeService?.title }}</h3>
           <p class="text-sm sm:text-md md:text-lg mb-4">{{ activeService?.summary }}</p>
           <ul class="list-disc pl-5 text-sm sm:text-md md:text-lg space-y-1">
-            <li v-for="(item, i) in activeService?.highlights" :key="i">{{ item }}</li>
+            <li v-for="(item, i) in activeService?.highlights" :key="i"><p class="font-normal">{{ item }}</p></li>
           </ul>
         </div>
         <label class="modal-backdrop" for="service_modal">Close</label>

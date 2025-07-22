@@ -149,7 +149,7 @@
     "name": "Ridgewood",
     "description": "A 464 units residential development located at 1 Ridgewood Close.<br>Condo facilities include swimming pool, sauna, gymnasium, tennis courts, squash courts, fitness corner, mini-mart, covered car park, 24 hours security, playground, and BBQ pits",
     "region": "West",
-    "units": "464",
+    "units": 464,
     "image": "/images/Ridgewood.jpg"
   },
   {
@@ -157,7 +157,7 @@
     "name": "8 Orange Grove",
     "description": "A 19 unit residential development located at Orange Grove Road.<br><br>8 Orange Grove is a freehold development located at 8 Orange Grove Road, Singapore 258342, in District 10, minutes away from Orchard MRT Station. Completed in 1986, it stands 15 storeys tall and comprises of 19 units. 8 Orange Grove is close to Singapore Botanic Gardens and esteemed clubs like Tanglin Club and The Pines Club.<br><br><b>Condo Facilities at 8 Orange Grove:</b><br>Covered carpark<br><br><b>Condo Amenities near 8 Orange Grove:</b><br>Numerous feeder bus services are available near 8 Orange Grove. It is also close to local and international schools, such as Raffles Girls’ Secondary School, ISS International School, and Overseas Family School.<br><br>8 Orange Grove’s proximity to Orchard Road brings residents close to several one-stop shopping destinations, such as Ion Orchard, Takashimaya, Wisma Atria, and The Paragon, where a suite of amenities can be found like supermarkets, boutique shops, banks, restaurants, eating establishments, cinema, library, and more.<br><br>For vehicle owners, driving from 8 Orange Grove to the business hub takes 10 – 15 minutes, via River Valley Road.",
     "region": "Central",
-    "units": "19",
+    "units": 19,
     "image": "/images/8_Orange_Grove.jpg"
   }
 ]

@@ -9,6 +9,15 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-
+  app: {
+    head: {
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap',
+        },
+      ]
+    }
+  },
   modules: ["@nuxt/eslint", "@nuxt/fonts", "@nuxt/icon", "@nuxt/image"],
 });
