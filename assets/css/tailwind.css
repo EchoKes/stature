@@ -6,6 +6,10 @@
   html {
     font-family: 'Urbanist', sans-serif;
   }
+  html,
+  body {
+    overflow-x: hidden;
+  }
 }
 
 @layer components {

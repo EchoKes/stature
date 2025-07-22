@@ -1,7 +1,7 @@
 <template>
     <div>
       <!-- NAVBAR -->
-      <header class="fixed top-0 w-full z-50 px-6 py-4 flex items-center justify-between text-white backdrop-blur-md bg-black/40">
+      <header class="fixed top-0 left-0 w-full max-w-screen overflow-hidden z-50 px-6 py-4 flex items-center justify-between text-white bg-black/40">
         <!-- Left: Logo -->
         <div class="text-yellow-400 font-bold text-sm uppercase tracking-widest">Stature</div>
   
@@ -42,11 +42,10 @@
         v-if="isOpen"
         class="fixed inset-0 z-40 bg-black/40 backdrop-blur-md backdrop-saturate-150 flex flex-col items-center justify-center space-y-8 text-white text-xl md:hidden"
       >
-        <NuxtLink to="/" @click="isOpen = false">Home</NuxtLink>
-        <NuxtLink to="/projects" @click="isOpen = false">Projects</NuxtLink>
-        <NuxtLink to="/services" @click="isOpen = false">Services</NuxtLink>
-        <NuxtLink to="/about" @click="isOpen = false">About</NuxtLink>
-        <NuxtLink to="/contact" @click="isOpen = false">Contact</NuxtLink>
+        <a href="/" @click="isOpen = false">Home</a>
+        <a href="/properties" @click="isOpen = false">Properties</a>
+        <a href="/#aboutUs" @click="isOpen = false">About Us</a>
+        <a href="/contact-us" @click="isOpen = false">Contact</a>
       </div>
     </div>
   </template>

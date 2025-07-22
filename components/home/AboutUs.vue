@@ -1,6 +1,6 @@
 <template>
   <!-- Who Are We -->
-  <section class="py-6 sm:py-10 md:py-20 bg-gray-50 text-center" id="aboutUs">
+  <section class="py-20 md:py-20 bg-gray-50 text-center" id="aboutUs">
     <h2 class="text-3xl md:text-6xl font-extrabold mb-4 sm:mb-12" data-aos="fade-up">
       Who are we?
     </h2>
