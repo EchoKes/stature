@@ -1,5 +1,5 @@
 <template>
-  <Navbar/>
+  <Navbar />
   <section class="w-full bg-white py-16 px-6">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       <!-- Left Side -->
@@ -91,14 +91,14 @@ onMounted(() => {
   window.initMap = () => {
     const map = new google.maps.Map(document.getElementById("map"), {
       center: { lat: 1.3491287231445312, lng: 103.71906280517578 },
-      zoom: 14,
+      zoom: 16,
       mapId: "f018ed7f22300410f0288098",
       disableDefaultUI: false,
     });
 
     new google.maps.Marker({
-      position: { lat: 1.3491287231445312, lng: 103.71906280517578 },
       map,
+      position: { lat: 1.3491287231445312, lng: 103.71906280517578 },
       title: "Stature Pte. Ltd.",
     });
   };
