@@ -17,7 +17,7 @@
             Providing Reliable Real Estate <br />
             Management Services Since 2008.
           </h1>
-          <div class="flex flex-wrap gap-6">
+          <div class="flex flex-wrap gap-6" data-aos="fade-up" data-aos-delay="100">
             <button
               class="bg-transparent text-white text-lg font-semibold border-b-2 border-transparent hover:border-white transition duration-300"
             >
@@ -26,7 +26,7 @@
             <button
               class="bg-transparent text-white text-lg font-semibold border-b-2 border-transparent hover:border-white transition duration-300"
             >
-             <a href="/contact-us">Contact Us →</a>
+              <a href="/contact-us">Contact Us →</a>
             </button>
           </div>
         </div>
@@ -36,14 +36,14 @@
 </template>
 
 <script setup>
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import Navbar from '~/components/shared/Navbar.vue'
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Navbar from "~/components/shared/Navbar.vue";
 
 onMounted(() => {
   AOS.init({
     duration: 1000,
     once: true,
-  })
-})
+  });
+});
 </script>

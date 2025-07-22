@@ -6,7 +6,7 @@
         <span class="text-black">we offer</span>
       </h2>
 
-      <div class="flex flex-wrap justify-center gap-8">
+      <div class="flex flex-wrap justify-center gap-8" data-aos="fade-up">
         <ServiceCard
           v-for="(service, index) in services"
           :key="index"
@@ -26,7 +26,9 @@
           <h3 class="text-xl sm:text-2xl md:text-3xl font-bold mb-2">{{ activeService?.title }}</h3>
           <p class="text-sm sm:text-md md:text-lg mb-4">{{ activeService?.summary }}</p>
           <ul class="list-disc pl-5 text-sm sm:text-md md:text-lg space-y-1">
-            <li v-for="(item, i) in activeService?.highlights" :key="i"><p class="font-normal">{{ item }}</p></li>
+            <li v-for="(item, i) in activeService?.highlights" :key="i">
+              <p class="font-normal">{{ item }}</p>
+            </li>
           </ul>
         </div>
         <label class="modal-backdrop" for="service_modal">Close</label>

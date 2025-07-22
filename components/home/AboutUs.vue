@@ -28,11 +28,11 @@
         <!-- Stats -->
         <div class="flex flex-row gap-8 mb-6 font-bold">
           <div>
-            <AnimatedCounter :end="15" :duration="3" />
+            <AnimatedCounter :end="15" :duration="5" />
             <p>Years of Excellence</p>
           </div>
           <div>
-            <AnimatedCounter :end="20" :duration="4" />
+            <AnimatedCounter :end="20" :duration="6" />
             <p>Projects Managed</p>
           </div>
         </div>
@@ -56,7 +56,7 @@
   </section>
 
   <!-- Image overlay-->
-  <div class="relative h-[0px]">
+  <div class="relative h-[0px]" data-aos="fade-up" data-aos-delay="100">
     <div
       class="absolute -right-8 sm:right-0 -translate-x-1/2 top-0 -translate-y-1/3 w-1/4 aspect-square rounded-full overflow-hidden shadow-lg border-4 border-[#7791BF] z-20"
     >
@@ -68,25 +68,29 @@
   <section class="py-12 sm:py-16 md:py-20 bg-[#EFF1F9]">
     <!-- First half with smaller right margin -->
     <div class="max-w-6xl mx-auto px-6 lg:pr-[30%]">
-      <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 sm:mb-12 text-[#7791BF]">
+      <h2
+        class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 sm:mb-12 text-[#7791BF]"
+        data-aos="fade-right"
+        data-aos-delay="100"
+      >
         Meet Our Director
       </h2>
-      <p class="text-gray-700">
-        Mr. Leong is the Director of Stature Real Estate Enterprises Pte Ltd and oversees the
-        company's operations and business strategy.
-      </p>
-      <br />
-      <p class="text-gray-700">
-        With over 20 years of experience in the real estate industry, Mr. Leong has managed a wide
-        range of residential, commercial, and industrial properties in Singapore and Indonesia. His
-        expertise spans property management, tenancy and contracts management, and project
-        oversight.
-      </p>
-      <br />
+      <div>
+        <p class="text-gray-700" data-aos="fade-right" data-aos-delay="300">
+          Mr. Leong is the Director of Stature Real Estate Enterprises Pte Ltd and oversees the
+          company's operations and business strategy.
+          <br /><br />
+          With over 20 years of experience in the real estate industry, Mr. Leong has managed a wide
+          range of residential, commercial, and industrial properties in Singapore and Indonesia.
+          His expertise spans property management, tenancy and contracts management, and project
+          oversight.
+        </p>
+        <br />
+      </div>
     </div>
 
     <!-- Second half with full margin -->
-    <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-6xl mx-auto px-6" data-aos="fade-right" data-aos-delay="300">
       <p class="text-gray-700">
         Before founding Stature, he led the Asset Management Department at Colliers International.
         Prior to that, he co-founded Optimuz Real Estate Consultants, which later merged with
