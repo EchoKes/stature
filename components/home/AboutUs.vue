@@ -1,7 +1,7 @@
 <template>
   <!-- Who Are We -->
-  <section class="py-6 sm:py-10 md:py-20 bg-gray-100 text-center" id="aboutUs">
-    <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-12" data-aos="fade-up">
+  <section class="py-6 sm:py-10 md:py-20 bg-gray-50 text-center" id="aboutUs">
+    <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-12" data-aos="fade-up">
       Who are we?
     </h2>
 
@@ -52,6 +52,60 @@
           Learn More →
         </button>
       </div>
+    </div>
+  </section>
+
+  <!-- Image overlay-->
+  <div class="relative h-[0px]">
+    <div
+      class="absolute -right-8 sm:right-0 -translate-x-1/2 top-0 -translate-y-1/3 w-1/4 aspect-square rounded-full overflow-hidden shadow-lg border-4 border-[#7791BF] z-20"
+    >
+      <img src="/images/director.jpg" alt="Director" class="w-full h-full object-cover" />
+    </div>
+  </div>
+
+  <!-- Director's profile -->
+  <section class="py-12 sm:py-16 md:py-20 bg-[#EFF1F9]">
+    <!-- First half with smaller right margin -->
+    <div class="max-w-6xl mx-auto px-6 lg:pr-[30%]">
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-12 text-[#7791BF]">
+        Meet Our Director
+      </h2>
+      <p class="text-gray-700">
+        Mr. Leong is the Director of Stature Real Estate Enterprises Pte Ltd and oversees the
+        company's operations and business strategy.
+      </p>
+      <br />
+      <p class="text-gray-700">
+        With over 20 years of experience in the real estate industry, Mr. Leong has managed a wide
+        range of residential, commercial, and industrial properties in Singapore and Indonesia. His
+        expertise spans property management, tenancy and contracts management, and project
+        oversight.
+      </p>
+      <br />
+    </div>
+
+    <!-- Second half with full margin -->
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="text-gray-700">
+        Before founding Stature, he led the Asset Management Department at Colliers International.
+        Prior to that, he co-founded Optimuz Real Estate Consultants, which later merged with
+        Colliers. As Director of Property Management at Optimuz, he played a key role in expanding
+        the firm's portfolio to over 25 projects and was actively involved in the company's
+        operations.
+      </p>
+      <br />
+      <p class="text-gray-700">
+        Earlier in his career, Mr. Leong worked with Jones Lang Wootton (later Jones Lang LaSalle)
+        in both Singapore and Indonesia. He headed the Residential Property Management Department in
+        Jakarta and Surabaya, helping to grow it into a leading player in the Indonesian market. His
+        clients included major developers like PT Lippo Group and PT Sinar Mas Group.
+      </p>
+      <br />
+      <p class="text-gray-700">
+        Mr. Leong holds a BSc in Estate Management from the UK and is a certified Fire Safety
+        Manager.
+      </p>
     </div>
   </section>
 </template>
