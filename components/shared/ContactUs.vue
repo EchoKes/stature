@@ -1,84 +1,128 @@
 <template>
   <Navbar />
-  <section class="w-full bg-white py-16 px-6">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      <!-- Left Side -->
-      <div class="text-center md:text-left space-y-6">
-        <h2 class="text-4xl md:text-5xl font-extrabold text-teal-600">
-          Have questions? <br class="hidden md:block" />
-          <span class="text-black">Let us know!</span>
-        </h2>
-        <p class="text-gray-500 text-lg">We're here to help!</p>
-        <div
-          class="flex items-center justify-center md:justify-start text-gray-500 text-lg space-x-2"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
-            />
-          </svg>
-          <span>+65 6779-2711</span>
+  <section class="w-full bg-white py-20 px-6">
+    <h2 class="section-title text-center mb-4">Have questions?</h2>
+    <p class="text-center text-gray-500 mb-8">
+      We're here to help! Reach out to us via the form below.
+    </p>
+    <div class="max-w-6xl mx-auto p-6 border border-gray-400 rounded-lg justify-items-center">
+      <!-- Step Indicators -->
+      <ul class="steps w-full mb-6 text-gray-900">
+        <li class="step" :class="{ 'step-info': step >= 1 }">Role</li>
+        <li class="step" :class="{ 'step-info': step >= 2 }">Services</li>
+        <li class="step" :class="{ 'step-info': step === 3 }">Submit</li>
+      </ul>
+
+      <!-- Step Panels -->
+      <transition name="fade" mode="out-in">
+        <div :key="step" class="py-2 justify-items-center">
+          <!-- Step 1: Choose Role -->
+          <div v-if="step === 1" class="space-y-4">
+            <p class="text-lg text-center font-medium text-gray-900">I am a...</p>
+            <div class="flex flex-wrap gap-3">
+              <button
+                v-for="option in roleOptions"
+                :key="option"
+                @click="form.role = option"
+                :class="[
+                  'px-4 py-2 rounded-full border text-gray-900 transition ',
+                  form.role === option
+                    ? 'bg-accent text-gray-900 border-blue-900'
+                    : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100',
+                ]"
+              >
+                {{ option }}
+              </button>
+            </div>
+            <div class="flex justify-center mt-4">
+              <button class="btn w-24" :disabled="!form.role" @click="step++">Next</button>
+            </div>
+          </div>
+
+          <!-- Step 2: Choose Service -->
+          <div v-else-if="step === 2" class="space-y-4">
+            <p class="text-lg text-center font-medium text-gray-900">
+              I want to know more about...
+            </p>
+            <div class="flex flex-wrap gap-3 justify-center">
+              <button
+                v-for="option in serviceOptions"
+                :key="option"
+                @click="form.service = option"
+                :class="[
+                  'px-4 py-2 rounded-full border transition',
+                  form.service === option
+                    ? 'bg-accent text-gray-900 border-blue-900'
+                    : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100',
+                ]"
+              >
+                {{ option }}
+              </button>
+            </div>
+            <div class="flex justify-center gap-4 mt-4">
+              <button class="btn w-24" @click="step--">Back</button>
+              <button
+                class="w-24"
+                :class="
+                  form.service
+                    ? 'btn'
+                    : 'btn-disabled cursor-not-allowed bg-gray-300 rounded-md text-white '
+                "
+                :disabled="!form.service"
+                @click="step++"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3: Summary + Email  -->
+          <div v-else-if="step === 3" class="space-y-4 text-gray-900 text-md sm:text-lg">
+            <label class="flex flex-col sm:flex-row gap-y-1 sm:items-center">
+              <strong class="inline-block min-w-14 pl-1 sm:p-0">Tags:</strong>
+              <span class="badge badge-outline mr-2">{{ form.role }}</span>
+              <span class="badge badge-outline">{{ form.service }}</span>
+            </label>
+
+            <div class="mt-2">
+              <label>
+                <strong class="block sm:inline-block min-w-14 pl-1 sm:p-0">Email:</strong>
+                <input
+                  v-model="form.email"
+                  type="email"
+                  autocomplete="off"
+                  placeholder="Enter your email"
+                  class="w-[16rem] sm:w-[22rem] md:w-[29rem] lg:w-[42rem] bg-inherit border rounded p-2"
+                  required
+                />
+              </label>
+            </div>
+            <div class="flex gap-4 mt-4 justify-center">
+              <button class="btn w-24" @click="step--">Back</button>
+              <button
+                class="w-24"
+                :class="
+                  form.email
+                    ? 'btn btn-primary'
+                    : 'btn-disabled cursor-not-allowed bg-gray-300 rounded-md text-white'
+                "
+                :disabled="!form.email"
+                @click="submitForm"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
         </div>
-        <div
-          class="flex items-center justify-center md:justify-start text-gray-500 text-lg space-x-2"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z"
-            />
-          </svg>
-          <span>+65 6779-2821</span>
-        </div>
-        <img
-          src="/public/images/contact.jpg"
-          alt="Contact Illustration"
-          class="hidden md:block mx-auto md:mx-0 max-w-sm"
-        />
-      </div>
-      <!-- Right Side: Form -->
-      <form
-        class="space-y-4 md:min-h-screen flex flex-col justify-center"
-        action="mailto:your-email@example.com"
-        method="POST"
-        enctype="text/plain"
-      >
-        <input type="text" placeholder="Your name" class="form-input" />
-        <input type="email" placeholder="Email" class="form-input" />
-        <input type="text" placeholder="Subject" class="form-input" />
-        <textarea placeholder="Write your message" rows="5" class="form-input"></textarea>
-        <button
-          type="submit"
-          class="bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition"
-        >
-          Send Message
-        </button>
-      </form>
+      </transition>
     </div>
-    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.711117190313!2d103.7188958!3d1.3498477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0fdc94e77d6b%3A0x8185edc55b9829f6!2sStature%20Real%20Estate%20Enterprises%20Pte.%20Ltd.!5e0!3m2!1sen!2ssg!4v1752908616986!5m2!1sen!2ssg" width="100%" height="450" style="border:0" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
     <div id="map" class="w-full h-96 mt-12"></div>
   </section>
 </template>
 
 <script setup>
 import { onMounted } from "vue";
+import { ref } from "vue";
 import Navbar from "./Navbar.vue";
 
 onMounted(() => {
@@ -103,4 +147,34 @@ onMounted(() => {
     });
   };
 });
+
+const step = ref(1);
+const roleOptions = ["Tenant", "Agent", "Landlord", "Property Manager", "Developer", "Other"];
+const serviceOptions = ["Property Assets", "Tenancy", "Integrated Contracts"];
+
+const form = ref({
+  role: "",
+  service: "",
+});
+
+const submitForm = () => {
+  const subject = encodeURIComponent(`Enquiry about ${form.value.service}`);
+  const body = encodeURIComponent(
+    `Hello Stature, I am a ${form.value.role} role, I would like to enquire more about ${form.value.service} matters. \nPlease get back to me at this email.\n\nThank you.`
+  );
+  const mailtoLink = `mailto:wingkit.leong@stature.com.sg?subject=${subject}&body=${body}`;
+  window.location.href = mailtoLink;
+};
 </script>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.4s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateX(20px);
+}
+</style>
