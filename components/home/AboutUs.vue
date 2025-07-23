@@ -1,6 +1,6 @@
 <template>
   <!-- Who Are We -->
-  <section class="py-20 md:py-20 bg-gray-50 text-center" id="aboutUs">
+  <section class="py-20 bg-gray-50 text-center" id="aboutUs">
     <h2 class="section-title" data-aos="fade-up">Who are we?</h2>
 
     <div
@@ -47,7 +47,7 @@
 
         <!-- CTA Button -->
         <button class="mt-6 bg-black hover:bg-gray-800 transition text-white px-6 py-2 rounded-lg">
-          Learn More →
+          <a href="/organization-structure">Org Struct →</a>
         </button>
       </div>
     </div>
