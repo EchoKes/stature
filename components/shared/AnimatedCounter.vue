@@ -1,5 +1,5 @@
 <template>
-  <span ref="counter" class="text-teal-600 text-4xl sm:text-5xl font-bold">
+  <span ref="counter" class="text-accent text-4xl sm:text-5xl font-bold">
     {{ displayValue }}
   </span>
 </template>

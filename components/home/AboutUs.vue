@@ -1,9 +1,7 @@
 <template>
   <!-- Who Are We -->
   <section class="py-20 md:py-20 bg-gray-50 text-center" id="aboutUs">
-    <h2 class="text-3xl md:text-6xl font-extrabold mb-4 sm:mb-12" data-aos="fade-up">
-      Who are we?
-    </h2>
+    <h2 class="section-title" data-aos="fade-up">Who are we?</h2>
 
     <div
       class="flex flex-col md:flex-row items-center justify-center gap-x-12 gap-y-8 px-6 max-w-6xl mx-auto"
@@ -68,11 +66,7 @@
   <section class="py-12 sm:py-16 md:py-20 bg-[#EFF1F9]">
     <!-- First half with smaller right margin -->
     <div class="max-w-6xl mx-auto px-6 lg:pr-[30%]">
-      <h2
-        class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 sm:mb-12 text-[#7791BF]"
-        data-aos="fade-right"
-        data-aos-delay="100"
-      >
+      <h2 class="section-title text-left text-accent" data-aos="fade-right" data-aos-delay="100">
         Meet Our Director
       </h2>
       <div>

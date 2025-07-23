@@ -1,7 +1,7 @@
 <template>
   <section id="servicesOffered">
     <div class="py-12 px-4 md:px-16 bg-[#F7F2EA]">
-      <h2 class="text-3xl md:text-6xl font-bold text-center mb-14" data-aos="fade-up">
+      <h2 class="section-title" data-aos="fade-up">
         Management services that <br />
         <span class="text-black">we offer</span>
       </h2>

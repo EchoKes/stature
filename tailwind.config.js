@@ -8,8 +8,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        accent: "#7791BF",
+      },
       fontFamily: {
-        urbanist: ['"Urbanist"', 'sans-serif'],
+        urbanist: ['"Urbanist"', "sans-serif"],
       },
       keyframes: {
         scrollLeft: {
