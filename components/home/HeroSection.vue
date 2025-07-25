@@ -4,7 +4,7 @@
 
     <!-- Background Image -->
     <img
-      src="/images/hero-bg2.webp"
+      src="/images/hero-bg3.jpg"
       alt="Hero Background"
       class="absolute inset-0 w-full h-full object-cover z-0"
     />
