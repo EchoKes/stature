@@ -49,7 +49,7 @@
     <!-- Bottom -->
     <div class="flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs">
       <p>Copyright © Stature</p>
-      <p>By E&K Group</p>
+      <!-- <p>By E&K Group</p> -->
       <div class="flex space-x-6 mt-4 md:mt-0">
         <p><a href="/data-protection">Privacy</a></p>
       </div>
