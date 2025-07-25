@@ -21,12 +21,12 @@
             <button
               class="bg-transparent text-white text-lg font-semibold border-b-2 border-transparent hover:border-white transition duration-300"
             >
-              <a href="#projects">Projects →</a>
+              <NuxtLink to="/properties">Projects →</NuxtLink>
             </button>
             <button
               class="bg-transparent text-white text-lg font-semibold border-b-2 border-transparent hover:border-white transition duration-300"
             >
-              <a href="/contact-us">Contact Us →</a>
+              <NuxtLink to="/contact-us">Contact Us →</NuxtLink>
             </button>
           </div>
         </div>

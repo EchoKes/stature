@@ -60,7 +60,7 @@
       data-aos="fade-up"
       data-aos-delay="200"
     >
-      <a href="/properties">View All →</a>
+      <NuxtLink to="/properties">View All →</NuxtLink>
     </button>
   </section>
 </template>

@@ -47,7 +47,7 @@
 
         <!-- CTA Button -->
         <button class="mt-6 bg-black hover:bg-gray-800 transition text-white px-6 py-2 rounded-lg">
-          <a href="/organization-structure">Org Struct →</a>
+          <NuxtLink to="/organization-structure">Org Struct →</NuxtLink>
         </button>
       </div>
     </div>

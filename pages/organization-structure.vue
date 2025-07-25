@@ -30,3 +30,27 @@
     </div>
   </section>
 </template>
+
+<script setup>
+useHead({
+  title: "Organization Structure | Stature Real Estate",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Discover Stature Real Estate's organization structure and meet the key people who drive our property management expertise.",
+    },
+    { name: "author", content: "Stature Real Estate" },
+
+    { property: "og:title", content: "Organization Structure | Stature Real Estate" },
+    {
+      property: "og:description",
+      content:
+        "Learn about the team structure and leadership behind Stature Real Estate's property management services.",
+    },
+    { property: "og:image", content: "/images/og-image.png" },
+    { property: "og:url", content: "https://stature.com.sg/organization-structure" },
+    { property: "og:type", content: "website" },
+  ],
+});
+</script>
