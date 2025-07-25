@@ -11,8 +11,8 @@
         v-for="region in regions"
         :key="region"
         @click="selectedRegion = region"
-        class="btn btn-sm"
-        :class="{ 'btn-primary': selectedRegion === region }"
+        class="btn btn-sm border-none"
+        :class="{ 'bg-[#659DF6] border-none transition-colors duration-400': selectedRegion === region }"
       >
         {{ region }}
       </button>
